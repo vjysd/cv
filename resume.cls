@@ -15,7 +15,7 @@
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
 \LoadClass[10pt,letterpaper]{article}
-
+%\LoadClass[10pt,a4paper]{article}
 \usepackage[parfill]{parskip}       % Do not indent aragraphs
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
