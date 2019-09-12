@@ -1,4 +1,3 @@
-
 \documentclass{resume}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
@@ -8,6 +7,9 @@
 \usepackage{fancyhdr}
 \usepackage[normalem]{ulem}
 \usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 
 \newlist{publications}{enumerate}{1}
 \setlist[publications, 1]{label = J\arabic*}
@@ -25,7 +27,7 @@
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
 \name{Vijay Sadashivaiah}
-\address{+1 443 447 3694 \\ \href{mailto:vjs@jhu.edu}{vjs@jhu.edu} \\ \href{https://vjysd.github.io}{https://vjysd.github.io}}
+\address{+1 443 447 3694 \\ vjs@jhu.edu \\ https://vjysd.github.io}
 \address{4002 B Linkwood Road, Baltimore, MD 21210}
 %\def\nameskip{\bigskip}
 \def\sectionskip{\medskip}
@@ -33,97 +35,70 @@
 
 \begin{document}
 \thispagestyle{empty}
-  \begin{rSection}{Research Interests}
-Neuroengineering, Brain-Machine Interfaces, Computational Neuroscience, Machine Learning
-  \end{rSection}
   \begin{rSection}{Education}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}
-\textbf{Johns Hopkins University, Whiting School of Engineering} & Baltimore, MD \\
-{Master of Science in Biomedical Engineering}, GPA: 3.87/4.00 & May 2017 \\
-Thesis: {``Towards Pain Control by Modelling the Interactions in a Mammalian Nerve Fiber''}\\ \\
-\textbf{Visvesvaraya Technological University, PES Institute of Technology} & Bangalore, India \\
-{Bachelor of Engineering in Electronics and Communication Engineering}, GPA: 9.32/10.00 & May 2015 \\
-Visiting student at \textbf{Massachusetts Institute of Technology}, Cambridge, MA & June - September 2014 \\
-Thesis: {``Transient Imaging: Seeing the Unseen''}\\
+\textbf{\large Johns Hopkins University -- Baltimore, MD} &  \\
+{Master of Science and Engineering in Biomedical Engineering} & May 2017 \\
+%$\>\>$Thesis: {``Towards Pain Control by Modelling the Interactions in a Mammalian Nerve Fiber''}
+\\
+\textbf{\large Visvesvaraya Technological University -- Bangalore, India} & \\
+{Bachelor of Engineering in Electronics and Communication Engineering} & May 2015 \\
+Visiting student at \textbf{Massachusetts Institute of Technology} & June - September 2014
+%$\>\>$Thesis: {``Transient Imaging: Seeing the Unseen''}
 \end{tabular*}
   \end{rSection}
-
-\vspace{1em}
-
-        \begin{rSection}{Awards and Fellowships}
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}
-\textbf{Recipient}, Biomedical engineering departmental fellowship - Johns Hopkins University & 2015 - 2017\\ 
-\textbf{Semi-finalist}, Data Incubator Challenge - The Data Incubator & 2017\\
-\textbf{Recipient}, Foundation Leenaards' summer research fellowship - EPFL &  2015\\
-\textbf{Recipient}, University merit scholarship - PES Institute of Technology & 2011 - 2015 \\ 
-\textbf{Recipient}, ``Code Something that Matters" scholarship - Vecna Robotics & 2015\\
-\textbf{Recipient}, TEQIP travel grant - PES Institute of Technology and Government of India& 2014, 2013 \\ 
-\textbf{Global finalist}, Vertech City Challenge - Vertech Symposium  & 2014\\
-\textbf{Winner}, Best student project - IEEE International Conference on Impact of E-Technology on US & 2014\\
-\textbf{Global finalist}, Intel Global Challenge -  UC Berkeley & 2013 \\
-\textbf{Finalist}, Biotechnology Entrepreneurship Student Teams (BEST) - Department of Biotechnology, India & 2013\\
-\textbf{Global semi-finalist}, Go Green in the City - Schneider Electric & 2013 \\
-\textbf{Winner}, Best project award - Innovation for a Better Tomorrow (IBETO)  & 2013\\
-\end{tabular*}
-    \end{rSection}
-
-  \vspace{1em}
-
   \begin{rSection}{Research Experience}
-\begin{rSubsection}{Lieber Institute for Brain Development, \textit{Research Associate}}{August 2017 - Present}{Adviser: Dr. Qiang Chen, \textit{Data Science/Computational Biology}}{Baltimore, MD}
-\item Exploring novel data-driven methods to analyze imaging genetics data from developmental brain disorders
+\begin{rSubsectionPromotion}{Lieber Institute for Brain Development -- Baltimore, MD}{}{Staff Scientist in Data Science and Computational Biology}{July 2019 - Present}{Research Associate in Data Science and Computational Biology}{August 2017 - June 2019}{Adviser: Dr. Qiang Chen}
+\item Exploring novel data-driven methods to analyze imaging, genetics and physiological data
 \item Building supervised learning models to identify underlying biological pathways in Schizophrenia
 \item Developed models are based on Deep Neural Network (CNN's) and traditional machine learning frameworks
 \item Presented preliminary results at local and international scientific meetings [C1, C2, C3, C4]
 \item Amalgamating the findings into journal articles [J1, J2, J3] 
-\item \uline{Technical Skills:} Python, R, MATLAB, SQL, Tensorflow, Keras, SPM, Linux
-    \end{rSubsection}
+\item \uline{Technical Skills:} Python, MATLAB, R, SQL, Signal Processing, Tensorflow, Keras, Mongo, SPM, Linux
+    \end{rSubsectionPromotion}
 
-    \begin{rSubsection}{Johns Hopkins University, \textit{Research Assistant}}{September 2015 - May 2017}{Adviser: Dr. Sridevi V. Sarma, \textit{Neuromedical Control Systems Lab}}{Baltimore, MD}
-\item Spearheaded collaboration between 3 principal investigators for thesis work
+    \begin{rSubsection}{Johns Hopkins University -- Baltimore, MD}{}{Research Assistant in Neuromedical Control Systems Lab}{September 2015 -- May 2017}{Adviser: Dr. Sridevi V. Sarma}
+\item Spearheaded collaboration between 3 principal investigators for masters thesis
 \item Constructed probabilistic, functional \& mechanistic models of mammalian nerve fiber to study chronic pain
 \item Quantified the interactions in a nerve fiber to test the performance of electrical nerve stimulation
-\item Optimized our codebase by 70\% and storage by 60\% by developing efficient NEURON scripts
+\item Optimized our code-base by 70\% and storage by 60\% by developing efficient NEURON scripts
 \item Presented results at local and international scientific meetings [PC1, PC2, PC3, PC4]
 \item Amalgamated the findings into a journal article [J4]
-\item \uline{Technical Skills:} MATLAB, NEURON, Unix, Linux
+\item \uline{Technical Skills:} MATLAB, NEURON, High Performance Cluster, Linux
     \end{rSubsection}
   
-    \begin{rSubsection}{École Polytechnique Fédérale de Lausanne, \textit{Summer Researcher}}{June 2015 - August 2015}{Adviser: Dr. Carl Petersen, \textit{Laboratory of Sensory Processing}}{Lausanne, Switzerland}
+    \begin{rSubsection}{École Polytechnique Fédérale de Lausanne -- Lausanne, Switzerland}{}{Summer Researcher in Laboratory of Sensory Processing}{June 2015 - August 2015}{Adviser: Dr. Carl Petersen}
 \item Studied the neural circuits involved in goal-directed sensorimotor interactions
-\item Analyzed over 1.5 TB of voltage sensitive dye images across multiple trials
-\item Developed an interactive graphical platform to visualize neuroimagaing data on MATLAB
+\item Analyzed voltage sensitive dye images of mouse neocortex
+\item Developed an interactive graphical platform to visualize neuroimaging data
 \item Presented preliminary results at the summer research program symposium [C5]
 \item Co-authored a journal article [J5]
-\item \uline{Technical Skills:} MATLAB, Python, Igor Pro, Linux
+\item \uline{Technical Skills:} MATLAB, Python, Experimental design, Linux
     \end{rSubsection}
-    \begin{rSubsection}{Massachusetts Institute of Technology, \textit{Summer Researcher}}{June 2014 - September 2014}{Adviser: Dr. Ramesh Raskar, \textit{Camera Culture Lab}}{Cambridge, MA}
+    \begin{rSubsection}{Massachusetts Institute of Technology -- Cambridge, MA}{}{Visiting Student Researcher in Camera Culture Lab}{June 2014 - September 2014}{Adviser: Dr. Ramesh Raskar}
 \item Designed a high speed imaging system to capture light in motion (Bachelor's thesis)
 \item Improved the depth resolution of conventional imaging system using multi-frequency light sources
-\item Authored a do it yourself manual for the imagaing system
+\item Authored a do it yourself manual for the imaging system
 \item Featured on MIT website and BBC news
 \item \uline{Technical Skills:} Verilog, MATLAB, C, Linux, Circuit design, Optics
     \end{rSubsection}
-    
- \begin{rSubsection}{PES Institute of Technology, \textit{Undergraduate Researcher}}{June 2012 - May 2014}{Adviser: Dr. Srinivas A, \textit{Healthcare Innovation Lab}}{Bangalore, India}
+  \end{rSection}
+ \begin{rSubsection}{PES Institute of Technology -- Bangalore, India}{}{Undergraduate Researcher in Healthcare Innovation Lab}{June 2012 - May 2014}{Adviser: Dr. Srinivas A}
 \item Collaborated with local and international hospitals to analyze real world clinical data
 \item Used signal processing techniques learnt in class to analyze human physiology data
 \item Worked on time series analysis of EKG, Skin Conductance, ERG etc
 \item Presented results at international technical conferences and competitions [C6]
 \item \uline{Technical Skills:} Verilog, MATLAB, Rapid prototyping, Circuit design, Arduino, Raspberry Pi, Sensors
  \end{rSubsection}
-  \end{rSection}
-
 \vspace{1em} 
-
 \begin{rSection}{Publications}
-\textbf{Journal articles}
+\textbf{\large Journal articles}
 \begin{publications}
 \item \textbf{Sadashivaiah, V.}, Goldman, A., Ulrich, B., Radulescu, E., Breman, K. F., Mattay, V. S., Weinberger, D. R., Chen, Q.; Using machine learning to identify novel neuroimaging phenotypes associated with cognitive dysfunction in Schizophrenia, \textit{NeuroImage}. (in preparation)
  
 \item \textbf{Sadashivaiah, V.}, Goldman, A., Ulrich, B., Straub, R. E., Calliott, J. H., Breman, K. F., Mattay, V. S., Weinberger, D. R., Chen, Q.; Exploring Shared Brain Cognitive Networks and the Related Genetic Components using Three-way Parallel ICA, \textit{Biological Psychiatry}. (in preparation) 
 
-\item Ren, M., Hu, Z., Chen, Q., Jaffe, A., Li, Y., \textbf{Sadashivaiah, V.}, Li, Y., Zhu, S., Rajpurohit, N., Shin, J. H., Xia, W., Jia, Y., Wu, J., Qin, S. L., Li, X., Zhu, J., Tian, Q., Parades, D., Zhang, F., Wang, K. H., Mattay, V. S., Callicott, J. H., Berman, K. F., Weinberger, D. R., Yang, F.; KCNH2-3.1 mediates aberrant complement activation to impair hippocampal-medial prefrontal circuitry associated with working memory deficits, \textit{Journal of Clinical Investigation}. (in review)
+\item Ren, M., Hu, Z., Chen, Q., Jaffe, A., Li, Y., \textbf{Sadashivaiah, V.}, Li, Y., Zhu, S., Rajpurohit, N., Shin, J. H., Xia, W., Jia, Y., Wu, J., Qin, S. L., Li, X., Zhu, J., Tian, Q., Parades, D., Zhang, F., Wang, K. H., Mattay, V. S., Callicott, J. H., Berman, K. F., Weinberger, D. R., Yang, F.; KCNH2-3.1 mediates aberrant complement activation to impair hippocampal-medial prefrontal circuitry associated with working memory deficits, \textit{Molecular Psychiatry}. (in review)
 
 \item \textbf{Sadashivaiah V.}, Sacre P., Guan Y., Anderson W. S., Sarma S. V.; Modeling the interactions between stimulation and physiologically induced APs in a mammalian nerve fiber: dependence on frequency and fiber diameter, \textit{Journal of Computational Neuroscience}, 2018.
 
@@ -131,7 +106,7 @@ Thesis: {``Transient Imaging: Seeing the Unseen''}\\
 
 \end{publications}
 
-\textbf{Peer reviewed conference proceedings}
+\textbf{\large Peer reviewed conference proceedings}
 \begin{conferences}
 
 \item \textbf{Sadashivaiah, V.}, Sacré, P., Guan, Y., Anderson, W. S., Sarma, S. V.; Studying the Interactions in a Mammalian Nerve Fiber: A Functional Modeling Approach, 40th Annual International Conference of the \textit{IEEE Engineering in Medicine \& Biology Society}, Honalulu, Hawaii, 2018.
@@ -146,7 +121,7 @@ Thesis: {``Transient Imaging: Seeing the Unseen''}\\
 \end{conferences}
 \end{rSection} 
 
-\textbf{Conference presentations}
+\textbf{\large Conference presentations}
 \begin{presentations}
 \item \textbf{Sadashivaiah, V.}, Goldman, A., Ulrich, B., Radulescu, E., Breman, K. F., Mattay, V. S., Weinberger, D. R., Chen, Q.; Using machine learning to identify novel neuroimaging phenotypes associated with cognitive dysfunction in Schizophrenia, 48th Annual Meeting of \textit{Society for Neuroscience}, San Diego, CA, 2018. (Oral)
 
@@ -163,63 +138,55 @@ Thesis: {``Transient Imaging: Seeing the Unseen''}\\
 
 \vspace{1em}
 
-\begin{rSection}{Teaching Experience}
+        \begin{rSection}{Awards and Fellowships}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}
+\textbf{Recipient}, Biomedical engineering departmental fellowship - Johns Hopkins University & 2015 - 2017\\ 
+\textbf{Semi-finalist}, Data Incubator Challenge - The Data Incubator & 2017\\
+\textbf{Recipient}, Foundation Leenaards' summer research fellowship - EPFL &  2015\\
+\textbf{Recipient}, University merit scholarship - PES Institute of Technology & 2011 - 2015 \\ 
+\textbf{Recipient}, ``Code Something that Matters" scholarship - Vecna Robotics & 2015\\
+\textbf{Recipient}, TEQIP travel grant - PES Institute of Technology and Government of India& 2014, 2013 \\ 
+\textbf{Global finalist}, Vertech City Challenge - Vertech Symposium  & 2014\\
+\textbf{Winner}, Best student project - IEEE International Conference on Impact of E-Technology & 2014\\
+\textbf{Global finalist}, Intel Global Challenge -  UC Berkeley & 2013 \\
+\textbf{Finalist}, Biotechnology Entrepreneurship Student Teams - Department of Biotechnology, India & 2013\\
+\textbf{Global semi-finalist}, Go Green in the City - Schneider Electric & 2013 \\
+\textbf{Winner}, Best project award - Innovation for a Better Tomorrow (IBETO)  & 2013\\
+\end{tabular*}
+    \end{rSection}
 
-\begin{rSubsection}{Johns Hopkins University, \textit{Graduate Teaching Assistant}}{September 2015 - May 2017}{Models and Simulations, Statistical Mechanics and Thermodynamics, Systems Bioengineering III}{Baltimore, MD}
-\item Assisted faculty in designing and proof-reading assignments
-\item Evaluated student assignments and quizzes, attended faculty led meetings
-    \end{rSubsection}
+\vspace{1em}
 
-\begin{rSubsection}{MIT Media Lab - Camera Culture Lab, \textit{Mentor}}{May 2014}{Kumbathon: Smart Cities Hackathon}{Cambridge, MA}
-\item  Trained with a group of MIT undergraduates to build smart city related projects 
-\item Traveled to Nasik, India to mentor projects at Kumbathon workshop
-\item Assisted groups with signal processing and big data
-    \end{rSubsection}
-
-\begin{rSubsection}{Indian Institute of Technology Bombay, \textit{Mentor}}{January 2014}{Rethinking Engineering Design Execution (REDX) Hackathon}{Mumbai, India}
-\item Guided $\sim$20 students in design and execution of innovative healthcare solutions
-\item Projects involved for e.g., design of low cost, data driven ELISA system for rural imaging laboratories
-\item Collaborated with doctors and researchers from MGH, Dana Faber Cancer Institute, Perkins Blind School etc.
-    \end{rSubsection}
-
-  \end{rSection}
+    \begin{rSection}{Skills}
+\textbf{Programming:} Python, MATLAB, R, mongo, \LaTeX, HTML, CSS, Command Line\\
+\textbf{Libraries:} TensorFlow, Keras, Git and Version control, OpenCV, Microsoft Office \\
+\textbf{Data \& Models:} Signal Processing, Machine Learning, Data Visualization, Big Data, Probability and Statistics
+\end{rSection} 
 
 \vspace{1em}
 
   \begin{rSection}{Institutional \& Community Experience}
-\begin{rSubsection}{Bootup Baltimore, \textit{Volunteer}}{November 2015 -- Present}{Center for Social Concern}{Baltimore, MD}
+\begin{rSubsection}{Bootup Baltimore}{Baltimore, MD}{Volunteer}{November 2015 -- Present}{Center for Social Concern}
 \item Refurbishing and repairing old computer systems before donating them to local schools in Baltimore
 \item Teaching basic computer skills like programming and word processing to students in 3rd through 5th grade 
     \end{rSubsection}
-          \begin{rSubsection}{Graduate Representative Organization, \textit{Advocacy Chair}}{May 2016 -- May 2017}{Johns Hopkins University}{Baltimore, MD}
+          \begin{rSubsection}{Graduate Representative Organization}{Baltimore, MD}{Advocacy Chair}{May 2016 -- May 2017}{Johns Hopkins University}
 \item Organized town halls every quarter with university administration to advocate graduate student needs and issues
 \item Facilitated discussion of topics including student healthcare, maternity leave and dining options on campus
 \item Assisted Social Chairs in organizing social and cultural events on campus
     \end{rSubsection}
-
-\begin{rSubsection}{Collegiate Social Responsibility Club, \textit{Member}}{September 2012 -- May 2015}{PES Institute of Technology}{Bangalore, India}
-\item Organized and assited community events like blood donation camps, food drives, etc. on campus
-\item Volunteered at medical camps in rural areas of Bangalore
-    \end{rSubsection}
-
-\begin{rSubsection}{Varsity Field Hockey, \textit{Goal-Keeper}}{May 2012 -- May 2014}{PES Institute of Technology}{Bangalore, India}
+\begin{rSubsection}{Varsity Field Hockey}{Bangalore, India}{Goal-Keeper}{May 2012 -- May 2014}{PES Institute of Technology}
 \item Participated in practices, weekly drills, competitions and community service events
 \item Drafted for state team trails at 2013 inter-collegiate tournament 
     \end{rSubsection}
 
-\begin{rSubsection}{IEEE Student Branch, \textit{Core Team}}{May 2013 -- May 2015}{PES Institute of Technology}{Bangalore, India}
+\begin{rSubsection}{IEEE Student Branch}{Bangalore, India}{Core Team}{May 2013 -- May 2015}{PES Institute of Technology}
 \item Organized technical workshops for student community with invited speakers from industry and academia
 \item Supervised a team of 5 to successfully organize a Spring Hackathon, ``Circuitus". Over 200 students participated
     \end{rSubsection}
   \end{rSection}   
 
 \vspace{1em}
-
-    \begin{rSection}{Skills}
-\textbf{Programming:} Proficient in Python, MATLAB, R, \LaTeX, SQL, HTML, CSS, JavaScript, bash scripting \\
-\textbf{Libraries:} TensorFlow, Keras, NEURON, SPM, git, OpenCV, Microsoft Office \\
-\textbf{Data \& Models:} Deep Learning, Statistical Learning, Stochastic Modeling, Data Visualization, Big Data \\
-\end{rSection} 
 
 \begin{rSection}{Interests}
 Rock Climbing, Taekwondo (ITF), Backpacking, Cycling, Photography, Board Games, DIY Projects

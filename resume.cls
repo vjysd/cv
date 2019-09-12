@@ -14,12 +14,13 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[10pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 %\LoadClass[10pt,a4paper]{article}
 \usepackage[parfill]{parskip}       % Do not indent aragraphs
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
-
+\usepackage[dvipsnames]{xcolor}
+\definecolor{HEAD}{RGB}{84, 141, 212}
 
 \nofiles                            % .aux files are not needed for resumes
 \pagestyle{empty}                   % resumes do not need page numbers
@@ -58,7 +59,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{{\huge\bf \textcolor{HEAD}\@name}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -82,7 +83,7 @@
 % Used to create large resume section
 \newenvironment{rSection}[1]{
   %\sectionskip
-  \MakeUppercase{\bf #1}
+  {\bf \Large \color{HEAD}#1}
   \sectionlineskip
   \hrule
   \begin{list}{}{
@@ -94,15 +95,28 @@
 }
 
 % Used to format job listing
-\newenvironment{rSubsection}[4]{
-  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
-  %%    Employer (bold)                     Dates (regular)    %%
-  %%    Title (emphasis)                Location (emphasis)    %%
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\bf #1}                 \hfill                  {    #2}% Stop a space
-  \ifthenelse{\equal{#3}{}}{}{
+\newenvironment{rSubsection}[5]{
+  {\bf \large #1}                 \hfill           { #2}% Stop a space
+  \ifthenelse{\equal{ #3}{}}{}{
   \\
-  { #3}                 \hfill                  { #4}% Stop a space
+  { \bf #3}                 \hfill                  { #4}\\% Stop a space
+  { #5}
+  }\smallskip
+  % \cdot used for bullets, items non-indented
+  \begin{list}{$\bullet$}{\leftmargin=1.5em}
+  \itemsep -0.5em \vspace{-0.5em}
+}{
+  \end{list}
+ % \vspace{0.5em}
+}
+
+\newenvironment{rSubsectionPromotion}[7]{
+  {\bf \large #1}                 \hfill                  {    #2} \\% Stop a space
+  { \bf #3}                 \hfill                  {    #4}% Stop a space
+  \ifthenelse{\equal{#5}{}}{}{
+  \\
+  {\bf #5}                 \hfill                  { #6} \\% Stop a space
+  { #7}
   }\smallskip
   % \cdot used for bullets, items non-indented
   \begin{list}{$\bullet$}{\leftmargin=1.5em}
