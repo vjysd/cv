@@ -115,7 +115,7 @@
   { \bf #3}                 \hfill                  {    #4}% Stop a space
   \ifthenelse{\equal{#5}{}}{}{
   \\
-  {\bf #5}                 \hfill                  { #6} \\% Stop a space
+  {#5}                 \hfill                  { #6} \\% Stop a space
   { #7}
   }\smallskip
   % \cdot used for bullets, items non-indented
